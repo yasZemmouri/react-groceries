@@ -31,7 +31,7 @@ class App extends React.Component{
     brand: '',
     quantity: 10,
     units: '',
-    isPurchased: false,
+    isPurchased: true,
 
   }
  //I can't put console.log here
@@ -42,7 +42,7 @@ class App extends React.Component{
    })
 
  }
- //=(e)=> so we don't have to bind this.
+ //=(e)=> arrow function so we don't have to bind this.
  handleSubmit=(e)=>{
    e.preventDefault();
    const newArticle = {
